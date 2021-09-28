@@ -1140,3 +1140,39 @@ For cards, we'll use the same card we made for `homepage`. Just copy the `produc
     grid-row-gap: 40px;
 }
 ```
+
+> OUTPUT
+![](https://github.com/DrVicki/ecommerce-guided-learning/blob/main/img/clothing12.jpeg)
+
+We are almost finished. The only page we have to create is the 404 page.
+
+## 404 Page
+
+Do the same for this page to make a `navbar`. After making `navbar`, Link `404.css` file. Let's code the page.
+
+
+```
+<img src="img/404.png" class="four-0-four-image" alt="">
+<p class="four-0-four-msg">look like you are lost. Head to beack to our <a href="#">homepage</a></p>
+```
+
+
+> `Footer.css`
+
+```
+.four-0-four-image{
+    display: block;
+    margin: 60px auto;
+}
+
+.four-0-four-msg{
+    text-align: center;
+    text-transform: capitalize;
+    color: #383838;
+}
+
+.four-0-four-msg a{
+    color: #383838;
+}
+```
+
