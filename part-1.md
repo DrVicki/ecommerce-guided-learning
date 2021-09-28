@@ -262,6 +262,33 @@ Now let's make its header.
 }
 ```
 > OUTPUT
-> 
+![](https://github.com/DrVicki/ecommerce-guided-learning/blob/main/img/clothing1.jpeg)
+
+Now we make a product card slider. 
+
+> `index.html`
+
+```
+<section class="product">
+    <h2 class="product-category">best selling</h2>
+</section>
+```
 
 
+> Home.css
+
+```
+.product{
+    position: relative;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+.product-category{
+    padding: 0 10vw;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    text-transform: capitalize;
+}
+```
