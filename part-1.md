@@ -795,3 +795,32 @@ Now you can delete the footer elements from the the index file, and import the `
 
 <script src="js/footer.js"></script>
 ```
+
+> OUTPUT
+![](https://github.com/DrVicki/ecommerce-guided-learning/blob/main/img/clothing8.png)
+
+Great! We are done with the homepage. Now, let's create the product page.
+
+## Product Page
+
+In the product page, write the HTML 5 template, then link the `home.css` and `product.css` file.
+
+
+```
+<head>
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/product.css">
+</head>
+And import these JS files.
+<script src="js/nav.js"></script>
+<script src="js/footer.js"></script>
+<script src="js/home.js"></script>
+<script src="js/product.js"></script>
+```
+
+Now make a navbar and footer by adding `nav` and `footer` element inside `body`.
+
+```
+<nav class="navbar"></nav>
+<footer></footer>
+```
