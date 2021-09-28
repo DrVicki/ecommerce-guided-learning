@@ -888,3 +888,126 @@ You can also copy the product container element from the home page to here. Let'
     opacity: 0.5;
 }
 ```
+
+> OUTPUT
+![](https://github.com/DrVicki/ecommerce-guided-learning/blob/main/img/clothing10.jpeg)
+
+Make the details section now.
+
+> `index.html`
+
+```
+<section>
+   // image slider
+   <div class="details">
+        <h2 class="product-brand">calvin klein</h2>
+        <p class="product-short-des">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        <span class="product-price">$99</span>
+        <span class="product-actual-price">$200</span>
+        <span class="product-discount">( 50% off )</span>
+
+        <p class="product-sub-heading">select size</p>
+
+        <input type="radio" name="size" value="s" checked hidden id="s-size">
+        <label for="s-size" class="size-radio-btn check">s</label>
+        <input type="radio" name="size" value="m" hidden id="m-size">
+        <label for="m-size" class="size-radio-btn">m</label>
+        <input type="radio" name="size" value="l" hidden id="l-size">
+        <label for="l-size" class="size-radio-btn">l</label>
+        <input type="radio" name="size" value="xl" hidden id="xl-size">
+        <label for="xl-size" class="size-radio-btn">xl</label>
+        <input type="radio" name="size" value="xxl" hidden id="xxl-size">
+        <label for="xxl-size" class="size-radio-btn">xxl</label>
+
+        <button class="btn cart-btn">add to cart</button>
+        <button class="btn">add to wishlist</button>
+    </div>
+</section>
+```
+
+> `Product.css`
+
+
+```
+.details{
+    width: 50%;
+}
+
+.details .product-brand{
+    text-transform: capitalize;
+    font-size: 30px;
+}
+
+.details .product-short-des{
+    font-size: 25px;
+    line-height: 30px;
+    height: auto;
+    margin: 15px 0 30px;
+}
+
+.product-price{
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.product-actual-price{
+    font-size: 30px;
+    opacity: 0.5;
+    text-decoration: line-through;
+    margin: 0 20px;
+    font-weight: 300;
+}
+
+.product-discount{
+    color: #ff7d7d;
+    font-size: 20px;
+}
+
+.product-sub-heading{
+    font-size: 30px;
+    text-transform: uppercase;
+    margin: 60px 0 10px;
+    font-weight: 300;
+}
+
+.size-radio-btn{
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    font-size: 20px;
+    border: 1px solid #383838;
+    border-radius: 50%;
+    margin: 10px;
+    margin-left: 0;
+    line-height: 80px;
+    text-transform: uppercase;
+    color: #383838;
+    cursor: pointer;
+}
+
+.size-radio-btn.check{
+    background: #383838;
+    color: #fff;
+}
+
+.btn{
+    width: 48%;
+    padding: 20px;
+    border-radius: 5px;
+    background: none;
+    border: 1px solid #383838;
+    color: #383838;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 20px 0;
+    text-transform: capitalize;
+}
+
+.cart-btn{
+    margin-right: 2%;
+    background: #383838;
+    color: #fff;
+}
+```
+
