@@ -125,7 +125,7 @@ Open ```home.css``` file.
 
 ```
 > OUTPUT
-![Navbar](https://github.com/DrVicki/ecommerce-guided-learning/blob/main/navbar.png)
+![Navbar](https://github.com/DrVicki/ecommerce-guided-learning/blob/main/img/navbar.png)
 
 
 * Now we create links below the navbar.
