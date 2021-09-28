@@ -125,7 +125,6 @@ Open ```home.css``` file.
 
 ```
 > OUTPUT
-
 ![Navbar](https://github.com/DrVicki/ecommerce-guided-learning/blob/main/navbar.png)
 
 
@@ -168,3 +167,52 @@ Open ```home.css``` file.
 }
 
 ```
+
+> OUTPUT
+![](https://github.com/DrVicki/ecommerce-guided-learning/blob/main/navbar2.png)
+
+Great! Now we want the navbar on all pages. I am don't like to copy the code. So 
+  * Let's make this navbar with JS dynamically. 
+   
+   * Open the `nav.js` file. 
+   
+   * Make a `createNav` function inside it.
+
+```
+const createNav = () => {
+    let nav = document.querySelector('.navbar');
+
+    nav.innerHTML = `
+        <div class="nav">
+            <img src="img/dark-logo.png" class="brand-logo" alt="">
+            <div class="nav-items">
+                <div class="search">
+                    <input type="text" class="search-box" placeholder="search brand, product">
+                    <button class="search-btn">search</button>
+                </div>
+                <a href="#"><img src="img/user.png" alt=""></a>
+                <a href="#"><img src="img/cart.png" alt=""></a>
+            </div>
+        </div>
+        <ul class="links-container">
+            <li class="link-item"><a href="#" class="link">home</a></li>
+            <li class="link-item"><a href="#" class="link">women</a></li>
+            <li class="link-item"><a href="#" class="link">men</a></li>
+            <li class="link-item"><a href="#" class="link">kids</a></li>
+            <li class="link-item"><a href="#" class="link">accessories</a></li>
+        </ul>
+    `;
+}
+
+```
+
+In the above code, inside the function, we select the nav element using the `querySelector` method. 
+
+* Then write its HTML using `innerHTML`. The value of `innerHTML` is the same HTML elements we have made in the `index.html` file. 
+
+* Now remove the HTML elements from there and import `nav.js`.
+
+``
+<nav class="navbar"></nav>
+<script src="js/nav.js"></script>
+``
