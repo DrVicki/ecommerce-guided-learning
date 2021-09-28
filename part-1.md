@@ -462,3 +462,90 @@ Let's make the pre and next button.
 }
 ```
 
+> OUTPUT
+![](https://github.com/DrVicki/ecommerce-guided-learning/blob/main/img/clothing4.jpeg)
+
+ * Let's make the slider work. Open `home.js` file. Code this.
+
+```
+const productContainers = [...document.querySelectorAll('.product-container')];
+const nxtBtn = [...document.querySelectorAll('.nxt-btn')];
+const preBtn = [...document.querySelectorAll('.pre-btn')];
+
+productContainers.forEach((item, i) => {
+    let containerDimenstions = item.getBoundingClientRect();
+    let containerWidth = containerDimenstions.width;
+
+    nxtBtn[i].addEventListener('click', () => {
+        item.scrollLeft += containerWidth;
+    })
+
+    preBtn[i].addEventListener('click', () => {
+        item.scrollLeft -= containerWidth;
+    })
+})
+```
+
+In the above code, I am selecting all product containers, next buttons, and pre buttons using `querySelectorAll` method. Then just loop through each container. Add click event to next button and pre button.
+
+ * Import the `home.js` file inside `index.html`.
+
+```
+<script src="js/home.js"></script>
+```
+
+
+ * We are done with product cards. Let's make the collections section now.
+
+```
+<!-- collections -->
+<section class="collection-container">
+    <a href="#" class="collection">
+        <img src="img/women-collection.png" alt="">
+        <p class="collection-title">women <br> apparels</p>
+    </a>
+    <a href="#" class="collection">
+        <img src="img/men-collection.png" alt="">
+        <p class="collection-title">men <br> apparels</p>
+    </a>
+    <a href="#" class="collection">
+        <img src="img/accessories-collection.png" alt="">
+        <p class="collection-title">accessories</p>
+    </a>
+</section>
+```
+
+```
+.collection-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+.collection{
+    position: relative;
+}
+
+.collection img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.collection p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+    text-transform: capitalize;
+}
+
+.collection:nth-child(3){
+    grid-column: span 2;
+    margin-bottom: 10px;
+}
+````
