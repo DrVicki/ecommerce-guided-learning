@@ -217,7 +217,7 @@ In the above code, inside the function, we select the nav element using the `que
 <script src="js/nav.js"></script>
 ```
 > OUTPUT
-![](https://github.com/DrVicki/ecommerce-guided-learning/blob/main/navbar3.png)
+![Navbar3](https://github.com/DrVicki/ecommerce-guided-learning/blob/main/img/navbar3.png)
 
 Now let's make its header.
 
