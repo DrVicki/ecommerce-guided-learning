@@ -1123,3 +1123,20 @@ Search.css
 }
 ```
 
+> OUTPUT
+![](https://github.com/DrVicki/ecommerce-guided-learning/blob/main/img/searchresults.png)
+
+For cards, we'll use the same card we made for `homepage`. Just copy the `product-container` element from `homepage` and paste it inside `search-results`.
+
+  * We are using flex box which will place the cards side by side. But we don't want that for our search page. So just over write the `product-container` elements property.
+
+> `Product.css`
+
+```
+.product-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    height: auto;
+    grid-row-gap: 40px;
+}
+```
