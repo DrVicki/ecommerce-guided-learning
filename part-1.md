@@ -6,6 +6,7 @@ We'll learn to create an e-commerce website using HTML, CSS, and JavaScript. Thi
 ## Code
 
 You can see our project's folder structure below.
+![File Structure](https://octodex.github.com/images/yaktocat.png)
 
 
 
