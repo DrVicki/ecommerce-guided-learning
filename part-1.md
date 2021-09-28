@@ -549,3 +549,107 @@ In the above code, I am selecting all product containers, next buttons, and pre 
     margin-bottom: 10px;
 }
 ````
+
+> OUTPUT
+![](https://github.com/DrVicki/ecommerce-guided-learning/blob/main/img/clothing5.jpeg)
+
+ * Now copy the product section 2 more times after the collection element. You can also change the images and data. We'll make the cards dynamically with database in future.
+
+ * After done copying product section. The only thing left in our page is footer. So let's make it.
+
+```
+<footer>
+    <div class="footer-content">
+        <img src="img/light-logo.png" class="logo" alt="">
+        <div class="footer-ul-container">
+            <ul class="category">
+                <li class="category-title">men</li>
+                <li><a href="#" class="footer-link">t-shirts</a></li>
+                <li><a href="#" class="footer-link">sweatshirts</a></li>
+                <li><a href="#" class="footer-link">shirts</a></li>
+                <li><a href="#" class="footer-link">jeans</a></li>
+                <li><a href="#" class="footer-link">trousers</a></li>
+                <li><a href="#" class="footer-link">shoes</a></li>
+                <li><a href="#" class="footer-link">casuals</a></li>
+                <li><a href="#" class="footer-link">formals</a></li>
+                <li><a href="#" class="footer-link">sports</a></li>
+                <li><a href="#" class="footer-link">watch</a></li>
+            </ul>
+            <ul class="category">
+                <li class="category-title">women</li>
+                <li><a href="#" class="footer-link">t-shirts</a></li>
+                <li><a href="#" class="footer-link">sweatshirts</a></li>
+                <li><a href="#" class="footer-link">shirts</a></li>
+                <li><a href="#" class="footer-link">jeans</a></li>
+                <li><a href="#" class="footer-link">trousers</a></li>
+                <li><a href="#" class="footer-link">shoes</a></li>
+                <li><a href="#" class="footer-link">casuals</a></li>
+                <li><a href="#" class="footer-link">formals</a></li>
+                <li><a href="#" class="footer-link">sports</a></li>
+                <li><a href="#" class="footer-link">watch</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+```
+
+ * As we did for the navbar, import `footer.css` inside the `home.css` file.
+
+> Home.css
+
+```
+@import 'nav.css';
+@import 'footer.css';
+Footer.css
+footer{
+    position: relative;
+    width: 100%;
+    padding: 40px 10vw;
+    padding-bottom: 80px;
+    background: #383838;
+}
+
+.footer-content{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.footer-content .logo{
+    height: 160px;
+}
+
+.footer-ul-container{
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.category{
+    width: 200px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    list-style: none;
+}
+
+.category-title{
+    grid-column: span 2;
+    text-transform: capitalize;
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.category .footer-link{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.footer-link:hover{
+    color: #fff;
+}
+```
+
+
