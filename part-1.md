@@ -1042,3 +1042,84 @@ Let's add a detail description section. Make it outside `product-details`.
     line-height: 25px;
 }
 ```
+
+> OUTPUT
+![](https://github.com/DrVicki/ecommerce-guided-learning/blob/main/img/description.png)
+
+Now make the image slider work, and size button toggle-able. Open `product.js` file.
+
+```
+const productImages = document.querySelectorAll(".product-images img"); // selecting all image thumbs
+const productImageSlide = document.querySelector(".image-slider"); // seclecting image slider element
+
+let activeImageSlide = 0; // default slider image
+
+productImages.forEach((item, i) => { // loopinh through each image thumb
+    item.addEventListener('click', () => { // adding click event to each image thumbnail
+        productImages[activeImageSlide].classList.remove('active'); // removing active class from current image thumb
+        item.classList.add('active'); // adding active class to the current or clicked image thumb
+        productImageSlide.style.backgroundImage = `url('${item.src}')`; // setting up image slider's background image
+        activeImageSlide = i; // updating the image slider variable to track current thumb
+    })
+})
+```
+
+And then code this.
+
+```
+// toggle size buttons
+
+const sizeBtns = document.querySelectorAll('.size-radio-btn'); // selecting size buttons
+let checkedBtn = 0; // current selected button
+
+sizeBtns.forEach((item, i) => { // looping through each button
+    item.addEventListener('click', () => { // adding click event to each 
+        sizeBtns[checkedBtn].classList.remove('check'); // removing check class from the current button
+        item.classList.add('check'); // adding check class to clicked button
+        checkedBtn = i; // upading the variable
+    })
+})
+```
+
+Great Work! We are finished with the product page. Now we make the search.
+
+** Search Page
+
+Just like we made the `navbar` and `footer` in the product page, we will do for the search page. Link these files to it.
+
+
+```
+<head>
+   <link rel="stylesheet" href="css/home.css">
+   <link rel="stylesheet" href="css/search.css">
+</head>
+<body>
+    <nav class="navbar"></nav>
+    <footer></footer>
+
+    <script src="js/nav.js"></script>
+    <script src="js/footer.js"></script>
+</body>
+Now make the product cards. First make the heading.
+<section class="search-results">
+    <h2 class="heading">search results for <span>product</span></h2>
+</section>
+Search.css
+.search-results{
+    width: 100%;
+    padding: 60px 0;
+}
+
+.heading{
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 400;
+    margin-bottom: 40px;
+    padding: 0 10vw;
+}
+
+.heading span{
+    font-weight: 700;
+}
+```
+
