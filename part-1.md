@@ -169,7 +169,7 @@ Open ```home.css``` file.
 ```
 
 > OUTPUT
-![](https://github.com/DrVicki/ecommerce-guided-learning/blob/main/navbar2.png)
+![Navbar2](https://github.com/DrVicki/ecommerce-guided-learning/blob/main/img/navbar2.png)
 
 Great! Now we want the navbar on all pages. I am don't like to copy the code. So 
   * Let's make this navbar with JS dynamically. 
