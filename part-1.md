@@ -262,5 +262,6 @@ Now let's make its header.
 }
 ```
 > OUTPUT
-![](https://github.com/DrVicki/ecommerce-guided-learning/blob/main/navbar3.png)
+> 
+
 
