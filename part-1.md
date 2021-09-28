@@ -1124,7 +1124,7 @@ Search.css
 ```
 
 > OUTPUT
-![](https://github.com/DrVicki/ecommerce-guided-learning/blob/main/img/searchresults.png)
+![searchResults](https://github.com/DrVicki/ecommerce-guided-learning/blob/main/img/searchresults.png)
 
 For cards, we'll use the same card we made for `homepage`. Just copy the `product-container` element from `homepage` and paste it inside `search-results`.
 
