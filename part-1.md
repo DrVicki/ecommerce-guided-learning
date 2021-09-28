@@ -420,3 +420,45 @@ Now we make a product card.
     text-decoration: line-through;
 }
 ```
+
+> OUTPUT
+![](https://github.com/DrVicki/ecommerce-guided-learning/blob/main/img/clothing3.jpeg)
+
+Let's make the pre and next button.
+
+```
+// before product-container element.
+<button class="pre-btn"><img src="img/arrow.png" alt=""></button>
+<button class="nxt-btn"><img src="img/arrow.png" alt=""></button>
+.pre-btn, .nxt-btn{
+    border: none;
+    width: 10vw;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
+    cursor: pointer;
+    z-index: 8;
+}
+
+.pre-btn{
+    left: 0;
+    transform: rotate(180deg);
+}
+
+.nxt-btn{
+    right: 0;
+}
+
+.pre-btn img, .nxt-btn img{
+    opacity: 0.2;
+}
+
+.pre-btn:hover img, .nxt-btn:hover img{
+    opacity: 1;
+}
+```
+
