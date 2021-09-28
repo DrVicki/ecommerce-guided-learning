@@ -261,4 +261,6 @@ Now let's make its header.
     font-weight: 300;
 }
 ```
+> OUTPUT
+![](https://github.com/DrVicki/ecommerce-guided-learning/blob/main/navbar3.png)
 
