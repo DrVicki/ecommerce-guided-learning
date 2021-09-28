@@ -6,7 +6,7 @@ We'll learn to create an e-commerce website using HTML, CSS, and JavaScript. Thi
 ## Code
 
 You can see our project's folder structure below.
-![File Structure](https://github.com/DrVicki/ecommerce-guided-learning/blob/main/folder-structure.png)
+![Folder Structure](https://github.com/DrVicki/ecommerce-guided-learning/blob/main/img/folderStructure.png)
 
 ### So let's start coding!
 
