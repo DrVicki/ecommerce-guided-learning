@@ -124,9 +124,47 @@ Open ```home.css``` file.
 }
 
 ```
+> OUTPUT
+
+![Navbar](https://github.com/DrVicki/ecommerce-guided-learning/blob/main/navbar.png)
 
 
+* Now we create links below the navbar.
 
+```
+<ul class="links-container">
+    <li class="link-item"><a href="#" class="link">home</a></li>
+    <li class="link-item"><a href="#" class="link">women</a></li>
+    <li class="link-item"><a href="#" class="link">men</a></li>
+    <li class="link-item"><a href="#" class="link">kids</a></li>
+    <li class="link-item"><a href="#" class="link">accessories</a></li>
+</ul>
 
+```
+^ The above code is inside the navbar element. ^
 
+```
+.links-container{
+    width: 100%;
+    display: flex;
+    padding: 10px 10vw;
+    justify-content: center;
+    list-style: none;
+    border-top: 1px solid #d1d1d1;
+}
 
+.link{
+    text-transform: capitalize;
+    padding: 0 10px;
+    margin: 0 5px;
+    text-decoration: none;
+    color: #383838;
+    opacity: 0.5;
+    transition: .5s;
+}
+
+.link:hover{
+    opacity: 1;
+}
+
+```
