@@ -1176,3 +1176,13 @@ Do the same for this page to make a `navbar`. After making `navbar`, Link `404.c
 }
 ```
 
+> OUTPUT
+![](https://github.com/DrVicki/ecommerce-guided-learning/blob/main/img/404.png)
+
+## Summary
+
+Great work!  
+
+e-Commerce websites are not that simple. 
+
+Don't forget to complete Part 2 of this series.
