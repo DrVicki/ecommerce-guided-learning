@@ -212,7 +212,53 @@ In the above code, inside the function, we select the nav element using the `que
 
 * Now remove the HTML elements from there and import `nav.js`.
 
-``
+```
 <nav class="navbar"></nav>
 <script src="js/nav.js"></script>
-``
+```
+> OUTPUT
+![](https://github.com/DrVicki/ecommerce-guided-learning/blob/main/navbar3.png)
+
+Now let's make its header.
+
+```
+<!-- hero section -->
+<header class="hero-section">
+    <div class="content">
+        <img src="img/light-logo.png" class="logo" alt="">
+        <p class="sub-heading">best fashion collection of all time</p>
+    </div>
+</header>
+```
+
+> `Home.css`
+
+```
+@import 'nav.css';
+
+.hero-section{
+    width: 100%;
+    height: calc(100vh - 120px);
+    background-image: url('../img/header.png');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-section .logo{
+    height: 150px;
+    display: block;
+    margin: auto;
+}
+
+.hero-section .sub-heading{
+    margin-top: 10px;
+    text-align: center;
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 35px;
+    font-weight: 300;
+}
+```
+
