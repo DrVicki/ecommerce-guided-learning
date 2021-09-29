@@ -111,3 +111,57 @@ app.use((req, res) => {
 We made a separate `404` page and redirected user on making a request to any unknown route. 
 
 If we deliver the `404` page through middle ware, we'll definitely get the page, but if we go to the nested routes, we'll get a page without styles. See the illustration below.
+
+![Middleware](https://github.com/DrVicki/ecommerce-guided-learning/blob/main/img/middleware.png)
+
+We are almost done with our server for now. Create a `/signup` route to deliver the signup page.
+
+
+```
+//signup route
+app.get('/signup', (req, res) => {
+    res.sendFile(path.join(staticPath, "signup.html"));
+})
+```
+
+> Add all the routes before the `404` route.
+
+## Sign Up Page
+
+Open your `signup.html` file. Start with a HTML5 template. Give a suitable title and link the `form.css` file to it.
+
+First; make a loader for the page.
+
+
+```
+<img src="img/loader.gif" class="loader" alt="">
+```
+
+> `form.css`
+
+```
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f5f5f5;
+    font-family: 'roboto', sans-serif;
+}
+
+.loader{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+}
+```
+
