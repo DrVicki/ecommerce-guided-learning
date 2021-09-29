@@ -720,7 +720,8 @@ We added the load event to the window, which is checking if the `user` is in ses
 
 ## Summary
 
-Great! Our sign up page is finished. Since the blog is being too much lengthy. I think that enough for today. But yes, 
+Great! Our sign up page is finished.` 
+
 
 In the second part, we made a login page and seller's dashboard. l
 
