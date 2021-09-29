@@ -296,4 +296,54 @@ label a{
 ```
 
 > OUTPUT
+![Clothing13](https://github.com/DrVicki/ecommerce-guided-learning/blob/main/img/Clothing13.png)
+
+Now we will make an alert box.
+
+```
+<div class="alert-box">
+    <img src="img/error.png" class="alert-img" alt="">
+    <p class="alert-msg">Error message</p>
+</div>
+/* alert */
+.alert-box{
+    width: 300px;
+    min-height: 150px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 100px rgba(0, 0, 0, 0.05);
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    opacity: 0;
+    pointer-events: none;
+    transition: 1s;
+}
+
+.alert-box.show{
+    opacity: 1;
+    pointer-events: all;
+    top: 50%;
+}
+
+.alert-img{
+    display: block;
+    margin: 10px auto 20px;
+    height: 60px;
+}
+
+.alert-msg{
+    color: #e24c4b;
+    font-size: 20px;
+    text-transform: capitalize;
+    text-align: center;
+    line-height: 30px;
+    font-weight: 500;
+}
+```
+
+> OUTPUT
+
 
