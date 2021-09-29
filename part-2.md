@@ -165,3 +165,135 @@ body{
 }
 ```
 
+> OUTPUT
+![Loader](https://github.com/DrVicki/ecommerce-guided-learning/blob/main/img/loader.png)
+
+Now we will make the form.
+
+```
+<div class="container">
+    <img src="img/dark-logo.png" class="logo" alt="">
+    <div>
+        <input type="text" autocomplete="off" id="name" placeholder="name">
+        <input type="email" autocomplete="off" id="email" placeholder="email">
+        <input type="password" autocomplete="off" id="password" placeholder="password">
+        <input type="text" autocomplete="off" id="number" placeholder="number">
+        <input type="checkbox" checked class="checkbox" id="terms-and-cond">
+        <label for="terms-and-cond">agree to our <a href="">terms and conditions</a></label>
+        <br>
+        <input type="checkbox" class="checkbox" id="notification">
+        <label for="notification">recieve upcoming offers and events mails</a></label>
+        <button class="submit-btn">create account</button>
+    </div>
+    <a href="/login" class="link">already have an account? Log in here</a>
+</div>
+```
+
+In the code above, we use `div` for forms instead of the `form` tag. With the HTML `form` you can send a `POST` request to server but can't catch the response. We want to catch the response from the server to validate the success.
+
+> `Form.css`
+
+```
+.logo{
+    height: 80px;
+    display: block;
+    margin: 0 auto 50px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+textarea{
+    display: block;
+    width: 300px;
+    height: 40px;
+    padding: 20px;
+    border-radius: 5px;
+    background: #fff;
+    border: none;
+    outline: none;
+    margin: 20px 0;
+    text-transform: capitalize;
+    color: #383838;
+    font-size: 14px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.01);
+    font-family: 'roboto', sans-serif;
+}
+
+::placeholder{
+    color: #383838;
+}
+
+.submit-btn{
+    width: 300px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    background: #383838;
+    color: #fff;
+    border-radius: 2px;
+    text-transform: capitalize;
+    border: none;
+    cursor: pointer;
+    display: block;
+    margin: 30px 0;
+}
+
+/* checkbox styles */
+
+.checkbox{
+    -webkit-appearance: none;
+    position: relative;
+    width: 15px;
+    height: 15px;
+    border-radius: 2px;
+    background: #fff;
+    border: 1px solid #383838;
+    cursor: pointer;
+}
+
+.checkbox:checked{
+    background: #383838;
+}
+
+.checkbox::after{
+    content: '';
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 100%;
+    pointer-events: none;
+    background-image: url(../img/check.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: none;
+}
+
+.checkbox:checked::after{
+    display: block;
+}
+
+label{
+    text-transform: capitalize;
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #383838;
+}
+
+label a{
+    color: #383838;
+}
+
+.link{
+    color: #383838;
+    text-transform: capitalize;
+    text-align: center;
+    display: block;
+}
+```
+
+> OUTPUT
+
