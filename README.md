@@ -10,3 +10,6 @@ This 2-part series walks you through building a full-stack eCommerce site.
 
 Keep coding!!
 Dr. Vicki
+
+![](https://github.com/DrVicki/ecommerce-guided-learning/blob/main/img/devvicki1.png)
+
